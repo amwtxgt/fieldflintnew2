@@ -16,7 +16,7 @@ import { fileURLToPath, URL } from 'node:url' // Node.js 工具函数，用于�
 export default defineConfig({
   plugins: [
     VueRouter({
-      dts: 'src/typed-router.d.ts', // 生成 Vue Router 类型声明文件
+      dts: 'auto/typed-router.d.ts', // 生成 Vue Router 类型声明文件
     }),
     Layouts(), // 启用布局组件功能
     AutoImport({
@@ -27,14 +27,14 @@ export default defineConfig({
           'pinia': ['defineStore', 'storeToRefs'], // 自动导入 Pinia 状态管理 API
         },
       ],
-      dts: 'src/auto-imports.d.ts', // 生成自动导入的类型声明文件
+      dts: 'auto/auto-imports.d.ts', // 生成自动导入的类型声明文件
       eslintrc: {
         enabled: true, // 启用 ESLint 配置支持
       },
       vueTemplate: true, // 在 Vue 模板中启用自动导入
     }),
     Components({
-      dts: 'src/components.d.ts', // 生成组件自动注册的类型声明文件
+      dts: 'auto/components.d.ts', // 生成组件自动注册的类型声明文件
     }),
     Vue({
       template: { transformAssetUrls }, // 处理 Vue 模板中的资源 URL 转换
