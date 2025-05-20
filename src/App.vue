@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
-  const d = ref(1);
-  console.log(d.value);
+
+  const a = ref(1)
+  console.log(a.value)
 </script>
