@@ -1,3 +1,3 @@
-# Styles
+# 样式
 
-This directory is for configuring the styles of the application.
+此目录用于配置应用程序的样式。

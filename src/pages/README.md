@@ -1,5 +1,5 @@
-# Pages
+# 页面
 
-Vue components created in this folder will automatically be converted to navigatable routes.
+在此文件夹中创建的 Vue 组件将自动转换为可导航的路由。
 
-Full documentation for this feature can be found in the Official [unplugin-vue-router](https://github.com/posva/unplugin-vue-router) repository.
+有关此功能的完整文档，请参阅官方 [unplugin-vue-router](https://github.com/posva/unplugin-vue-router) 仓库。

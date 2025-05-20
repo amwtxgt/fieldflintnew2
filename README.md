@@ -1,81 +1,81 @@
-# Vuetify (Default)
+# Vuetify（默认）
 
-This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
+这是 Vuetify 的官方脚手架工具，旨在帮助您在构建新的 Vuetify 应用程序时有一个良好的开端。它设置了一个基础模板，包含所有必要的配置和标准目录结构，使您能够轻松开始开发，而无需从头开始设置项目。
 
-## ❗️ Important Links
+## ❗ 重要链接
 
-- 📄 [Docs](https://vuetifyjs.com/)
-- 🚨 [Issues](https://issues.vuetifyjs.com/)
-- 🏬 [Store](https://store.vuetifyjs.com/)
-- 🎮 [Playground](https://play.vuetifyjs.com/)
+- 📄 [文档](https://vuetifyjs.com/)
+- 🚨 [问题](https://issues.vuetifyjs.com/)
+- 🏬 [商店](https://store.vuetifyjs.com/)
+- 🎮 [游乐场](https://play.vuetifyjs.com/)
 - 💬 [Discord](https://community.vuetifyjs.com)
 
-## 💿 Install
+## 💿 安装
 
-Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+使用您喜欢的包管理器设置您的项目。使用相应的命令安装依赖项：
 
-| Package Manager                                                | Command        |
-|---------------------------------------------------------------|----------------|
-| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
-| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
-| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
-| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+| 包管理器                                                | 命令        |
+|-------------------------------------------------------|-------------|
+| [yarn](https://yarnpkg.com/getting-started)           | `yarn install` |
+| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install) | `npm install`  |
+| [pnpm](https://pnpm.io/installation)                  | `pnpm install` |
+| [bun](https://bun.sh/#getting-started)                | `bun install`  |
 
-After completing the installation, your environment is ready for Vuetify development.
+完成安装后，您的环境就准备好进行 Vuetify 开发了。
 
-## ✨ Features
+## ✨ 功能
 
-- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
-- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
-- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts-next for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts-next](https://github.com/loicduong/vite-plugin-vue-layouts-next)
-- 💻 **Enhanced Development Experience**: Benefit from TypeScript's static type checking and the ESLint plugin suite for Vue, ensuring code quality and consistency. [TypeScript](https://www.typescriptlang.org/) | [ESLint Plugin Vue](https://eslint.vuejs.org/)
-- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
-- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- 🛠️ **Strongly-Typed Vue**: Use vue-tsc for type-checking your Vue components, and enjoy a robust development experience. [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
+- 🖼️ **优化的前端堆栈**：利用最新的 Vue 3 和 Vuetify 3，提供现代、响应式的 UI 开发体验。[Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
+- 🗃️ **状态管理**：集成 [Pinia](https://pinia.vuejs.org/)，为 Vue 提供直观且模块化的状态管理解决方案。
+- 🚦 **路由和布局**：使用 Vue Router 进行 SPA 导航，并使用 vite-plugin-vue-layouts-next 组织 Vue 文件布局。[Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts-next](https://github.com/loicduong/vite-plugin-vue-layouts-next)
+- 💻 **增强的开发体验**：受益于 TypeScript 的静态类型检查和 Vue 的 ESLint 插件套件，确保代码质量和一致性。[TypeScript](https://www.typescriptlang.org/) | [ESLint 插件 Vue](https://eslint.vuejs.org/)
+- ⚡ **下一代工具**：由 Vite 提供支持，体验快速冷启动和即时 HMR（热模块替换）。[Vite](https://vitejs.dev/)
+- 🧩 **自动组件导入**：通过 unplugin-vue-components 流程化工作流程，在使用组件时自动导入它们。[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+- 🛠️ **强类型 Vue**：使用 vue-tsc 进行 Vue 组件的类型检查，并享受强大的开发体验。[vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
 
-These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+这些功能经过精心挑选，以提供从设置到部署的无缝开发体验，确保您的 Vuetify 应用程序既强大又易于维护。
 
-## 💡 Usage
+## 💡 使用方法
 
-This section covers how to start the development server and build your project for production.
+本节介绍如何启动开发服务器以及为生产环境构建项目。
 
-### Starting the Development Server
+### 启动开发服务器
 
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
+要启动带有热重载的开发服务器，请运行以下命令。服务器将在 [http://localhost:3000](http://localhost:3000) 上可用：
 
 ```bash
 yarn dev
 ```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+（对于 npm、pnpm 和 bun，请重复使用相应的命令。）
 
-> Add NODE_OPTIONS='--no-warnings' to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
+> 添加 NODE_OPTIONS='--no-warnings' 以抑制由于 Vuetify 导入映射引起的 JSON 导入警告。如果您使用的是 Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) 或更高版本，可以将此参数更改为 NODE_OPTIONS='--disable-warning=5401'。如果您不介意这些警告，可以从 package.json 的 dev 脚本中删除此参数。
 
-### Building for Production
+### 为生产环境构建
 
-To build your project for production, use:
+要为生产环境构建项目，请使用：
 
 ```bash
 yarn build
 ```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+（对于 npm、pnpm 和 bun，请重复使用相应的命令。）
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+一旦构建过程完成，您的应用程序就可以在生产环境中部署了。
 
-## 💪 Support Vuetify Development
+## 💪 支持 Vuetify 开发
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+这个项目是基于 [Vuetify](https://vuetifyjs.com/en/) 构建的，这是一个具有全面 Vue 组件集合的 UI 库。Vuetify 是一个 MIT 许可的开源项目，由于我们 [赞助者和支持者](https://vuetifyjs.com/introduction/sponsors-and-backers/) 的慷慨贡献才得以实现。如果您有兴趣支持这个项目，请考虑：
 
-- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
-- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
-- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
-- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
-- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
-- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
-- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
+- [请求企业支持](https://support.vuetifyjs.com/)
+- [在 Github 上赞助 John](https://github.com/users/johnleider/sponsorship)
+- [在 Github 上赞助 Kael](https://github.com/users/kaelwd/sponsorship)
+- [在 Open Collective 上支持团队](https://opencollective.com/vuetify)
+- [在 Patreon 上成为赞助者](https://www.patreon.com/vuetify)
+- [在 Tidelift 上成为订阅者](https://tidelift.com/subscription/npm/vuetify)
+- [通过 Paypal 进行一次性捐赠](https://paypal.me/vuetify)
 
-## 📑 License
+## 📑 许可证
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2016-present Vuetify, LLC
+版权所有 (c) 2016-present Vuetify, LLC

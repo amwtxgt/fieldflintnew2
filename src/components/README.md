@@ -1,12 +1,12 @@
-# Components
+# 组件
 
-Vue template files in this folder are automatically imported.
+此文件夹中的 Vue 模板文件会自动导入。
 
-## 🚀 Usage
+## 🚀 使用方法
 
-Importing is handled by [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components). This plugin automatically imports `.vue` files created in the `src/components` directory, and registers them as global components. This means that you can use any component in your application without having to manually import it.
+导入由 [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) 处理。该插件会自动导入在 `src/components` 目录中创建的 `.vue` 文件，并将其注册为全局组件。这意味着您可以在应用程序中使用任何组件，而无需手动导入。
 
-The following example assumes a component located at `src/components/MyComponent.vue`:
+以下示例假设一个组件位于 `src/components/MyComponent.vue`：
 
 ```vue
 <template>
@@ -20,7 +20,7 @@ The following example assumes a component located at `src/components/MyComponent
 </script>
 ```
 
-When your template is rendered, the component's import will automatically be inlined, which renders to this:
+当您的模板渲染时，组件的导入将自动内联，这会渲染成以下内容：
 
 ```vue
 <template>
@@ -31,5 +31,4 @@ When your template is rendered, the component's import will automatically be inl
 
 <script lang="ts" setup>
   import MyComponent from '@/components/MyComponent.vue'
-</script>
-```
+</script>```
