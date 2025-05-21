@@ -10,14 +10,25 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify' // Vuetify UI 
 
 // Utilities
 import { defineConfig } from 'vite' // Vite 提供的配置类型定义函数
-import { fileURLToPath, URL } from 'node:url' // Node.js 工具函数，用于路径处理
+import { fileURLToPath, URL } from 'node:url'
+import { resolve } from 'node:path'; // Node.js 工具函数，用于路径处理
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     VueRouter({
+      // 配置扫描文件的目录和方式
+      routesFolder: [
+        {
+          src: 'src-renderer/windows/main/pages',
+        },
+      ],
+
+      // 指定生成类型声明的位置
       dts: 'auto/typed-router.d.ts', // 生成 Vue Router 类型声明文件
+
     }),
+
     Layouts(), // 启用布局组件功能
     AutoImport({
       imports: [
@@ -34,6 +45,7 @@ export default defineConfig({
       vueTemplate: true, // 在 Vue 模板中启用自动导入
     }),
     Components({
+      dirs:['src-renderer/components'],
       dts: 'auto/components.d.ts', // 生成组件自动注册的类型声明文件
     }),
     Vue({
@@ -43,7 +55,7 @@ export default defineConfig({
     Vuetify({
       autoImport: true, // 自动导入 Vuetify 组件和指令
       styles: {
-        configFile: 'src/styles/settings.scss', // 自定义 SCSS 变量配置文件
+        configFile: 'src-renderer/styles/settings.scss', // 自定义 SCSS 变量配置文件
       },
     }),
     Fonts({
@@ -70,7 +82,7 @@ export default defineConfig({
   define: { 'process.env': {} }, // 定义全局变量
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)), // 设置路径别名 @ 指向 src 目录
+      '@': fileURLToPath(new URL('./src-renderer', import.meta.url)), // 设置路径别名 @ 指向 src 目录
     },
     extensions: [
       '.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue', // 支持的文件扩展名
@@ -86,6 +98,14 @@ export default defineConfig({
       },
       scss: {
         api: 'modern-compiler', // 使用 modern 编译器处理 scss 文件
+      },
+    },
+  },
+  build: {
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src-renderer/windows/main/index.html'),
       },
     },
   },
