@@ -5,13 +5,13 @@ import Fonts from 'unplugin-fonts/vite' // 自动加载字体资源
 import Layouts from 'vite-plugin-vue-layouts-next' // 支持 Vue 布局组件
 import Vue from '@vitejs/plugin-vue' // Vite 官方 Vue 插件，支持 Vue 3 单文件组件
 import VueRouter from 'unplugin-vue-router/vite' // Vue Router 自动生成路由插件
-import { VueRouterAutoImports } from 'unplugin-vue-router' // Vue Router 的自动导入 API
-import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify' // Vuetify UI 框架集成插件
+import {VueRouterAutoImports} from 'unplugin-vue-router' // Vue Router 的自动导入 API
+import Vuetify, {transformAssetUrls} from 'vite-plugin-vuetify' // Vuetify UI 框架集成插件
 
 // Utilities
-import { defineConfig } from 'vite' // Vite 提供的配置类型定义函数
-import { fileURLToPath, URL } from 'node:url'
-import { resolve } from 'node:path'; // Node.js 工具函数，用于路径处理
+import {defineConfig} from 'vite' // Vite 提供的配置类型定义函数
+import {fileURLToPath, URL} from 'node:url'
+import {resolve} from 'node:path'; // Node.js 工具函数，用于路径处理
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -45,7 +45,7 @@ export default defineConfig({
       vueTemplate: true, // 在 Vue 模板中启用自动导入
     }),
     Components({
-      dirs:['src-renderer/components'],
+      dirs: ['src-renderer/components'],
       dts: 'auto/components.d.ts', // 生成组件自动注册的类型声明文件
     }),
     Vue({
@@ -62,9 +62,11 @@ export default defineConfig({
       fontsource: {
         families: [
           {
-            name: 'Roboto', // 使用 Google Fonts 的 Roboto 字体
-            weights: [100, 300, 400, 500, 700, 900], // 包含的字体粗细
-            styles: ['normal', 'italic'], // 包含的字体样式
+            name: 'Roboto',
+            weights: [100, 300, 400, 700, 900],
+            styles: ['normal', 'italic'],
+            // 只加载拉丁字符，减小文件体积
+            subset: 'latin',
           },
         ],
       },
@@ -79,7 +81,7 @@ export default defineConfig({
       'unplugin-vue-router/data-loaders/basic',
     ],
   },
-  define: { 'process.env': {} }, // 定义全局变量
+  define: {'process.env': {}}, // 定义全局变量
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src-renderer', import.meta.url)), // 设置路径别名 @ 指向 src 目录
