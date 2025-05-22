@@ -7,7 +7,6 @@ import Vue from '@vitejs/plugin-vue' // Vite 官方 Vue 插件，支持 Vue 3 �
 import VueRouter from 'unplugin-vue-router/vite' // Vue Router 自动生成路由插件
 import { VueRouterAutoImports } from 'unplugin-vue-router' // Vue Router 的自动导入 API
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify' // Vuetify UI 框架集成插件
-
 // Utilities
 import { defineConfig } from 'vite' // Vite 提供的配置类型定义函数
 import { fileURLToPath, URL } from 'node:url'
@@ -96,7 +95,7 @@ export default defineConfig({
     ]
   },
   server: {
-    port: 3000 // 开发服务器端口
+    port: 4173 // 开发服务器端口
   },
   css: {
     preprocessorOptions: {
