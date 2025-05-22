@@ -12,7 +12,7 @@ import { createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
-  routes: setupLayouts(routes),
+  routes: setupLayouts(routes)
 })
 
 // Workaround for https://github.com/vitejs/vite/issues/11804

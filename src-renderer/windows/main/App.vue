@@ -5,7 +5,6 @@
 </template>
 
 <script lang="ts" setup>
-
-  const a = ref(1)
-  console.log(a.value)
+const a = ref(1)
+console.log(a.value)
 </script>
