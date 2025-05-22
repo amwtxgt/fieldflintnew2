@@ -22,11 +22,9 @@ export default defineConfig({
           src: 'src-renderer/windows/main/pages'
         }
       ],
-
       // 指定生成类型声明的位置
       dts: 'auto/typed-router.d.ts' // 生成 Vue Router 类型声明文件
     }),
-
     Layouts(), // 启用布局组件功能
     AutoImport({
       imports: [
@@ -61,7 +59,7 @@ export default defineConfig({
         families: [
           {
             name: 'Roboto',
-            weights: [100, 300, 400, 700, 900],
+            weights: [200, 400, 500, 700, 900],
             styles: ['normal', 'italic'],
             // 只加载拉丁字符，减小文件体积
             subset: 'latin'
